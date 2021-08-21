@@ -6,7 +6,7 @@ namespace EnumToStringOptimizer
 {
     public static class EnumClassCreator
     {
-        private const string CLASS_NAMESPACE = "EnumOptimizer";
+        private const string CLASS_NAMESPACE = "EnumToStringOptimizer";
         public static string Create(EnumsModel model)
         {
             StringBuilder sb = new();

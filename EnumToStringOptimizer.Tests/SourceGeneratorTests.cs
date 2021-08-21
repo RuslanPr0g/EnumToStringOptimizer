@@ -18,7 +18,7 @@ namespace EnumToStringOptimizer.Tests
                 @"
 using System;
 
-namespace EnumOptimizer.Tests
+namespace EnumToStringOptimizer.Tests
 {
     public enum Role
     {
@@ -29,7 +29,7 @@ namespace EnumOptimizer.Tests
                 @"
 using System;
 
-namespace EnumOptimizer.Tests.Types
+namespace EnumToStringOptimizer.Tests.Types
 {
     public enum MediaType
     {
@@ -40,7 +40,7 @@ namespace EnumOptimizer.Tests.Types
                 @"
 using System;
 
-namespace EnumOptimizer.Tests.Types
+namespace EnumToStringOptimizer.Tests.Types
 {
     public class TestType
     {

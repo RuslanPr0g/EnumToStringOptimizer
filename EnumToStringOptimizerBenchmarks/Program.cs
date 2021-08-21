@@ -1,5 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
+using EnumToStringOptimizer.Common;
 
 namespace EnumToStringOptimizer
 {
@@ -11,15 +12,10 @@ namespace EnumToStringOptimizer
         }
     }
 
-    public enum MediaType
-    {
-        Video, Image, Album, LiveStream
-    }
-
     [MemoryDiagnoser]
     public class Benchmark
     {
-        private MediaType Type = MediaType.Video;
+        private readonly MediaType Type = MediaType.Video;
         [Benchmark]
         public string NativeToString() => Type.ToString();
 
